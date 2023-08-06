@@ -3,11 +3,6 @@
 <head>
   <style>
     * {
-     
-
-    * {
-
-    * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -21,18 +16,21 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      padding: 20px; /* Add some padding around the container */
     }
 
     .section {
+      position: relative; /* Add relative positioning for section */
       width: 30%;
       margin: 10px;
       padding: 20px;
-      border: 1px solid #ccc;
+      border: 1px solid #000; /* Add black border */
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .pink-bg {
       background-color: pink;
+      color: #000; /* Adjust text color for readability */
     }
 
     .blue-bg {
@@ -45,73 +43,41 @@
       color: white;
     }
 
-    .menu-title {
-      text-align: center;
-      font-size: 175%; /* 75% larger than default font size */
-      margin: 20px 0;
-    }
-
     .section-title {
-      font-size: 125%; /* 25% larger than default font size */
-      margin-bottom: 10px;
+      position: absolute; /* Add absolute positioning for section title */
+      top: 10px;
+      right: 10px;
+      background-color: #fff; /* Add white background for section title area */
+      padding: 5px 10px;
+      font-size: 16px;
     }
 
     .content {
       font-size: 14px;
     }
+
+    .menu-title {
+      text-align: center;
+      font-size: 24px;
+      margin: 20px 0;
+    }
   </style>
 </head>
 <body>
-  
- 
-<div class="menu-title">OUR MENU</div>
-  
- 
-<div class="container">
-    
-   
-<div class="section pink-bg">
-      
-      <
-
-     
-<div class="section-title">Chicken</div>
-      
-      <
-
-     
-<p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    
-    </div
-</div>
-    
-   
-<div class="section blue-bg">
-      
-     
-<div class="section-title">Beef</div>
-      
-     
-<p class="content">Ut cursus turpis ut quam malesuada, et volutpat arcu semper.</p>
-    
-   
-</div>
+  <div class="menu-title">OUR MENU</div>
+  <div class="container">
+    <div class="section pink-bg">
+      <div class="section-title">Chicken</div>
+      <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="section blue-bg">
+      <div class="section-title">Beef</div>
+      <p class="content">Ut cursus turpis ut quam malesuada, et volutpat arcu semper.</p>
+    </div>
     <div class="section purple-bg">
-      
-      <
-<div class="section-title">SuShi</div>
-      
-      <
-<p class="content">Nunc vel orci nec justo ultrices iaculis id a nisl.</p>
-    
-   
-</div>
-  
- 
-</div>
-
-</
+      <div class="section-title">SuShi</div>
+      <p class="content">Nunc vel orci nec justo ultrices iaculis id a nisl.</p>
+    </div>
+  </div>
 </body>
 </html>
-
-``
