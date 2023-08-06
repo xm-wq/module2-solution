@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .section {
+    flex: 1;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .pink-bg {
+    background-color: #ff66b2; /* Pink background color */
+  }
+  
+  .blue-bg {
+    background-color: #3498db; /* Blue background color */
+  }
+  
+  .purple-bg {
+    background-color: #9b59b6; /* Purple background color */
+  }
+  
+  @media (max-width: 991px) {
+    .section {
+      width: 49%;
+    }
+    
+    .section:nth-child(3) {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
+  
