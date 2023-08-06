@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
-<body>
+<head>
   <style>
-    *{
-      list-style: none;
-      text-decoration: none;
-      border-collapse: collapse;
-      margin: 0px;
-      padding: 0px;
-      color: blue;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    </style>  <div class="container">
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section {
+      width: 30%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .pink-bg {
+      background-color: pink;
+    }
+
+    .blue-bg {
+      background-color: blue;
+      color: white;
+    }
+
+    .purple-bg {
+      background-color: purple;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <div class="section pink-bg">
-      <div class="section-title">Chicken</div>
+      <div class="section-title">鸡肉</div>
       <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
     <div class="section blue-bg">
-      <div class="section-title">Beef</div>
+      <div class="section-title">牛肉</div>
       <p class="content">Ut cursus turpis ut quam malesuada, et volutpat arcu semper.</p>
     </div>
     <div class="section purple-bg">
-      <div class="section-title">Sushi</div>
+      <div class="section-title">寿司</div>
       <p class="content">Nunc vel orci nec justo ultrices iaculis id a nisl.</p>
     </div>
   </div>
